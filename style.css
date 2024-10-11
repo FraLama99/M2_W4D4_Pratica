@@ -14,6 +14,10 @@ h1 {
   font-size: 50px;
   color: azure;
 }
+h2 {
+  color: azure;
+  font-size: 22px;
+}
 #divCompilazione {
   height: 100vh;
   width: 50%;

@@ -119,7 +119,7 @@ function ricerca() {
 
 
 
-    if (result.length > 0) {
+    if (count > 0) {
 
         let table = document.createElement('table');
 
@@ -151,7 +151,7 @@ function ricerca() {
     }
     else {
         let no_result = document.createElement('p')
-        no_result.style.color = "red"
+        no_result.style.color = "azure"
         no_result.textContent = "Non ci sono risultati"
         divVuoto.appendChild(no_result)
     }
@@ -159,7 +159,6 @@ function ricerca() {
     document.getElementById('ricercaTitolo').value = '';
     document.getElementById('ricercaLuogo').value = '';
 
-    if (count === 0) alert('non ci sono risultati')
     return { result, count }
 
 
